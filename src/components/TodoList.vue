@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>TO DO({{numberOfTasks}})</h2>
+    <h2>TO DO({{todo.length}})</h2>
     <div>{{doneTasks}} tasks completed</div>
     <table border="1">
       <tr>
@@ -66,6 +66,9 @@
         removeTodoItem: function(index) {
             this.todo.splice(index, 1)
         }
+    },
+    created: function() {
+
     }
   }
 </script>
